@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Laravel PHP Framework</title>
+	<title>{{$title}}</title>
+	<link href="{{URL::to('')}}/{{$icon}}" rel="icon">
+	<meta name="description" content="{{$m_deskripsi}}">
+	<meta name="keyword" content="{{$m_keyword}}">
 	<style>
 		@import url(//fonts.googleapis.com/css?family=Lato:700);
 

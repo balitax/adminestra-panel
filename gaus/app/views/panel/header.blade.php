@@ -4,6 +4,10 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 	<title>{{$title}}</title>
+	<meta name="description" content="Bee Panel - Admin Panel Developed byb Agus Cahyono ">
+	<meta name="keyword" content="Bee Panel - Admin Panel Developed byb Agus Cahyono ">
+	<meta name="author" content="s=agus cahyono">
+	<link href="{{asset('assets/admin/assets/img/bee.png')}}" rel="icon">
 	{{HTML::style('assets/admin/bootstrap/css/bootstrap.min.css')}}
 	{{HTML::style('assets/admin/assets/css/main.css')}}
 	{{HTML::style('assets/admin/assets/css/plugins.css')}}
@@ -11,7 +15,6 @@
 	{{HTML::style('assets/admin/assets/css/icons.css')}}
 	{{HTML::style('assets/admin/assets/css/fontawesome/font-awesome.min.css')}}
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
-
 	{{HTML::script('assets/admin/assets/js/libs/jquery-1.10.2.min.js')}}
 	{{HTML::script('assets/admin/plugins/jquery-ui/jquery-ui-1.10.2.custom.min.js')}}
 	{{HTML::script('assets/admin/bootstrap/js/bootstrap.min.js')}}
@@ -43,6 +46,12 @@
 	{{HTML::script('assets/admin/assets/js/app.js')}}
 	{{HTML::script('assets/admin/assets/js/plugins.js')}}
 	{{HTML::script('assets/admin/assets/js/plugins.form-components.js')}}
+	{{HTML::script('assets/ckeditor/ckeditor.js')}}
+
+	<!-- DataTables -->
+	{{HTML::script('assets/admin/plugins/datatables/jquery.dataTables.min.js')}}
+	{{HTML::script('assets/admin/plugins/datatables/DT_bootstrap.js')}}
+
 
 	<script>
 	$(document).ready(function(){
@@ -71,8 +80,8 @@
 
 			<!-- Logo -->
 			<a class="navbar-brand" href="index.html">
-				<img src="{{asset('assets/admin/assets/img/logo.png')}}" alt="logo" />
-				<strong>MITRA</strong>DESAIN
+				<img src="{{asset('assets/admin/assets/img/bee.png')}}" alt="logo" />
+				<strong>BEE </strong>PANEL
 			</a>
 			<!-- /logo -->
 
@@ -99,13 +108,12 @@
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 						<!--<img alt="" src="assets/img/avatar1_small.jpg" />-->
 						<i class="icon-male"></i>
-						<span class="username">Administrator</span>
+						<span class="username">{{Auth::user()->name}}</span>
 						<i class="icon-caret-down small"></i>
 					</a>
 					<ul class="dropdown-menu">
-						<li><a href="pages_user_profile.html"><i class="icon-user"></i> My Profile</a></li>
-						<li><a href="pages_calendar.html"><i class="icon-calendar"></i> My Calendar</a></li>
-						<li><a href="#"><i class="icon-tasks"></i> My Tasks</a></li>
+						<li><a target="_blank" href="{{URL::to('')}}"><i class="icon-home"></i> Lihat Website</a></li>
+						<li><a href="{{URL::to('/panel/edit_profil')}}"><i class="icon-user"></i> Edit Profil</a></li>
 						<li class="divider"></li>
 						<li><a href="{{URL::to('panel/home/out')}}"><i class="icon-key"></i> Log Out</a></li>
 					</ul>
@@ -132,56 +140,19 @@
 					<li>
 						<a href="javascript:void(0);">
 							<i class="icon-desktop"></i>
-							UI Features
-							<span class="label label-info pull-right">6</span>
+							UTAMA
 						</a>
 						<ul class="sub-menu">
 							<li>
-								<a href="ui_general.html">
+								<a href="{{URL::to('panel/identitas_webs')}}">
 								<i class="icon-angle-right"></i>
-								General
+								Identitas Webs
 								</a>
 							</li>
 							<li>
-								<a href="ui_buttons.html">
+								<a href="{{URL::to('panel/pages')}}">
 								<i class="icon-angle-right"></i>
-								Buttons
-								</a>
-							</li>
-							<li>
-								<a href="ui_tabs_accordions.html">
-								<i class="icon-angle-right"></i>
-								Tabs &amp; Accordions
-								</a>
-							</li>
-							<li>
-								<a href="ui_sliders.html">
-								<i class="icon-angle-right"></i>
-								Sliders
-								</a>
-							</li>
-							<li>
-								<a href="ui_nestable_list.html">
-								<i class="icon-angle-right"></i>
-								Nestable List
-								</a>
-							</li>
-							<li>
-								<a href="ui_typography.html">
-								<i class="icon-angle-right"></i>
-								Typography / Icons
-								</a>
-							</li>
-							<li>
-								<a href="ui_google_maps.html">
-								<i class="icon-angle-right"></i>
-								Google Maps
-								</a>
-							</li>
-							<li>
-								<a href="ui_grid.html">
-								<i class="icon-angle-right"></i>
-								Grid
+								Halaman Webs
 								</a>
 							</li>
 						</ul>

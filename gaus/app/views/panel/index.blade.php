@@ -19,8 +19,8 @@
 <body class="login">
     <!-- Logo -->
     <div class="logo">
-        <img src="{{asset('assets/admin/assets/img/logo.png')}}" alt="logo" />
-        <strong>MITRA</strong>DESAIN
+        <img src="{{asset('assets/admin/assets/img/bee.png')}}" alt="logo" />
+        <strong>BEE</strong>PANEL
     </div>
 
     <div class="box">
@@ -58,9 +58,9 @@
         </div> 
     </div>
 
-    <div class="footer">
+    <!-- <div class="footer">
         <a href="#" class="sign-up">Developed by<strong> Mitra Desain</strong></a>
-    </div>
+    </div> -->
     <!-- /Footer -->
 </body>
 </html>

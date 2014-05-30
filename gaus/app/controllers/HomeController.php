@@ -17,7 +17,10 @@ class HomeController extends BaseController {
 
 	public function showWelcome()
 	{
-		return View::make('hello');
+		$data = array(
+			'title'		=> 'Hello World',
+		);
+		return View::make('hello',$data);
 	}
 
 }
