@@ -150,9 +150,27 @@
 								</a>
 							</li>
 							<li>
+								<a href="{{URL::to('panel/menu')}}">
+								<i class="icon-angle-right"></i>
+									Menu Webs
+								</a>
+							</li>
+							<li>
 								<a href="{{URL::to('panel/pages')}}">
 								<i class="icon-angle-right"></i>
 								Halaman Webs
+								</a>
+							</li>
+							<li>
+								<a href="{{URL::to('panel/slider')}}">
+								<i class="icon-angle-right"></i>
+								Slider Webs
+								</a>
+							</li>
+							<li>
+								<a href="{{URL::to('panel/gambar_webs')}}">
+								<i class="icon-angle-right"></i>
+									Gambar Webs
 								</a>
 							</li>
 						</ul>
@@ -160,146 +178,36 @@
 					<li>
 						<a href="javascript:void(0);">
 							<i class="icon-edit"></i>
-							Form Elements
+							KONTEN
 						</a>
 						<ul class="sub-menu">
 							<li>
-								<a href="form_components.html">
+								<a href="{{URL::to('panel/news')}}">
 								<i class="icon-angle-right"></i>
-								Form Components
+									News and Events
 								</a>
 							</li>
 							<li>
-								<a href="form_layouts.html">
+								<a href="{{URL::to('panel/portofolio')}}">
 								<i class="icon-angle-right"></i>
-								Form Layouts
+									Projek / Portofolio
 								</a>
 							</li>
 							<li>
-								<a href="form_validation.html">
+								<a href="{{URL::to('panel/association')}}">
 								<i class="icon-angle-right"></i>
-								Form Validation
+									Association / Clients
 								</a>
 							</li>
-						</ul>
-					</li>
-					<li>
-						<a href="javascript:void(0);">
-							<i class="icon-table"></i>
-							Tables
-						</a>
-						<ul class="sub-menu">
 							<li>
-								<a href="tables_static.html">
+								<a href="{{URL::to('panel/contact-me')}}">
 								<i class="icon-angle-right"></i>
-								Static Tables
-								</a>
-							</li>
-							<li>
-								<a href="tables_dynamic.html">
-								<i class="icon-angle-right"></i>
-								Dynamic Tables (DataTables)
-								</a>
-							</li>
-							<li>
-								<a href="tables_responsive.html">
-								<i class="icon-angle-right"></i>
-								Responsive Tables
-								</a>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<a href="charts.html">
-							<i class="icon-bar-chart"></i>
-							Charts &amp; Statistics
-						</a>
-					</li>
-					<li>
-						<a href="javascript:void(0);">
-							<i class="icon-folder-open-alt"></i>
-							Pages
-						</a>
-						<ul class="sub-menu">
-							<li>
-								<a href="login.html">
-								<i class="icon-angle-right"></i>
-								Login
-								</a>
-							</li>
-							<li>
-								<a href="pages_user_profile.html">
-								<i class="icon-angle-right"></i>
-								User Profile
-								</a>
-							</li>
-							<li>
-								<a href="pages_calendar.html">
-								<i class="icon-angle-right"></i>
-								Calendar
-								</a>
-							</li>
-							<li>
-								<a href="pages_invoice.html">
-								<i class="icon-angle-right"></i>
-								Invoice
-								</a>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<a href="javascript:void(0);">
-							<i class="icon-list-ol"></i>
-							4 Level Menu
-						</a>
-						<ul class="sub-menu">
-							<li class="open-default">
-								<a href="javascript:void(0);">
-									<i class="icon-cogs"></i>
-									Item 1
-									<span class="arrow"></span>
-								</a>
-								<ul class="sub-menu">
-									<li class="open-default">
-										<a href="javascript:void(0);">
-											<i class="icon-user"></i>
-											Sample Link 1
-											<span class="arrow"></span>
-										</a>
-										<ul class="sub-menu">
-											<li class="current"><a href="javascript:void(0);"><i class="icon-remove"></i> Sample Link 1</a></li>
-											<li><a href="javascript:void(0);"><i class="icon-pencil"></i> Sample Link 1</a></li>
-											<li><a href="javascript:void(0);"><i class="icon-edit"></i> Sample Link 1</a></li>
-										</ul>
-									</li>
-									<li><a href="javascript:void(0);"><i class="icon-user"></i>  Sample Link 1</a></li>
-									<li><a href="javascript:void(0);"><i class="icon-external-link"></i>  Sample Link 2</a></li>
-									<li><a href="javascript:void(0);"><i class="icon-bell"></i>  Sample Link 3</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="javascript:void(0);">
-									<i class="icon-globe"></i>
-									Item 2
-									<span class="arrow"></span>
-								</a>
-								<ul class="sub-menu">
-									<li><a href="javascript:void(0);"><i class="icon-user"></i>  Sample Link 1</a></li>
-									<li><a href="javascript:void(0);"><i class="icon-external-link"></i>  Sample Link 1</a></li>
-									<li><a href="javascript:void(0);"><i class="icon-bell"></i>  Sample Link 1</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="javascript:void(0);">
-									<i class="icon-folder-open"></i>
-									Item 3
+									Kontak Masuk
 								</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
-				
-
 				<div class="sidebar-widget align-center">
 					<div class="btn-group" data-toggle="buttons" id="theme-switcher">
 						<label class="btn active">

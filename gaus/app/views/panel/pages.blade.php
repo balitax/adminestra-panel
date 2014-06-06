@@ -34,20 +34,25 @@
 					</tr>
 				</thead>
 				<tbody>
+				<?php
+					$no = 1;
+				?>
+				@foreach ($pages as $p)
 					<tr>
-						<td>1</td>
-						<td>Tentang Kami</td>
+						<td>{{$no++}}</td>
+						<td>{{$p->title}}</td>
 						<td>
-							<a target="_blank" href="{{URL::to('pages/tentang-kami.html')}}">
-							tentang-kami.html
+							<a target="_blank" href="{{URL::to('pages')}}/{{$p->slug_pages}}">
+							{{$p->slug_pages}}
 							</a>
 						</td>
-						<td class="hidden-xs">Aktif</td>
+						<td class="hidden-xs">{{$p->status}}</td>
 						<td>
-							<a href=""><span class="label label-success">Edit</span></a>
-							<a href=""><span class="label label-danger">Hapus</span></a>
+							<a href="{{URL::to('panel/pages/edit')}}/{{$p->id}}"><span class="label label-success">Edit</span></a>
+							<a href="{{URL::to('panel/pages/del')}}/{{$p->id}}"><span class="label label-danger">Hapus</span></a>
 						</td>
 					</tr>
+				@endforeach
 				</tbody>
 			</table>
 		</div>

@@ -58,9 +58,9 @@
         </div> 
     </div>
 
-    <!-- <div class="footer">
-        <a href="#" class="sign-up">Developed by<strong> Mitra Desain</strong></a>
-    </div> -->
+    <div class="footer">
+        <a href="http://mitradesain.co.id" class="sign-up">Developed by<strong> Mitra Desain</strong></a>
+    </div>
     <!-- /Footer -->
 </body>
 </html>

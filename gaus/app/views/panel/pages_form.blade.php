@@ -6,10 +6,10 @@
 <div class="page-header">
 <div class="page-title">
 	<h3>
-		@if($status == 'new')
-			Tambah Halaman
+		@if($status == 'baru')
+			Tambah Halaman Website
 		@else
-			Edit Halaman
+			Edit Halaman Website
 		@endif
 	</h3>
 </div>
@@ -18,7 +18,7 @@
 <div class="col-md-12">
 	<div class="widget box">
 		<div class="widget-header">
-			<h4><i class="icon-reorder"></i> Perbarui Data Profil Anda</h4>
+			<h4><i class="icon-reorder"></i> Data Halaman Website</h4>
 		</div>
 		<div class="widget-content">
 			<form class="form-horizontal row-border" enctype="multipart/form-data" method="POST" action="{{URL::to('panel/pages/save')}}">
@@ -27,21 +27,21 @@
 				<div class="form-group">
 					<label class="col-md-2 control-label">Judul Halaman :</label>
 					<div class="col-md-10">
-						<input type="text" name="judul_halaman" value="{{$judul_halaman}}" class="form-control">
+						<input type="text" name="judul_halaman" value="{{$judul_halaman}}" required="" class="form-control">
 					</div>
 				</div>
 
 				<div class="form-group">
 					<label class="col-md-2 control-label">Konten Halaman :</label>
 					<div class="col-md-10">
-						<textarea name="konten_halaman" class="ckeditor">{{$konten_halaman}}</textarea>
+						<textarea name="konten_halaman" required="" class="ckeditor">{{$konten_halaman}}</textarea>
 					</div>
 				</div>
 
 				<div class="form-group">
 					<label class="col-md-2 control-label">Status :</label>
 					<div class="col-md-10">
-						<select name="status" class="form-control">
+						<select name="status_hal" class="form-control">
 							<option value="Y">Aktif</option>
 							<option value="T">Tidak Aktif</option>
 						</select>

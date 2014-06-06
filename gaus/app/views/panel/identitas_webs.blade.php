@@ -70,6 +70,13 @@
 				</div>
 
 				<div class="form-group">
+					<label class="col-md-2 control-label">Nomor Fax :</label>
+					<div class="col-md-10">
+						<input class="form-control" value="{{$no_fax}}" type="text" name="no_fax">
+					</div>
+				</div>
+
+				<div class="form-group">
 					<label class="col-md-2 control-label">Meta Deskripsi :</label>
 					<div class="col-md-10">
 						<textarea name="meta_deskripsi" class="form-control">{{$meta_deskripsi}}</textarea>
@@ -94,7 +101,7 @@
 				<div class="form-group">
 					<label class="col-md-2 control-label">Favicon :</label>
 					<div class="col-md-10">
-						<img src="{{URL::to('')}}/{{$favicon}}">
+						<img src="{{URL::to('file/images')}}/{{$favicon}}">
 					</div>
 				</div>
 				

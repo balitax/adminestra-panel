@@ -12,6 +12,7 @@ return array(
 	| as the size rules. Feel free to tweak each of these messages here.
 	|
 	*/
+	"recaptcha" => 'The :attribute field is not correct.',
 
 	"accepted"             => "The :attribute must be accepted.",
 	"active_url"           => "The :attribute is not a valid URL.",
